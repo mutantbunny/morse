@@ -35,7 +35,7 @@ function ch = morse_decode_char(morse)
     elseif morse == "........"
         ch = '<ERROR>';    % special case: error sign is 8 dits long (........)
     end
-    if ch = '*'
+    if ch == '*'
         warning(['Invalid Morse sign "', ch, '" on message "', morse, '".']);
     end
 end
